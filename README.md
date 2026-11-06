@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AlbionMKTfront
 
-## Getting Started
+A web interface for exploring item market prices in **Albion Online**. Built as a personal frontend project with a focus on item searches, market filters, and displaying price data across cities.
 
-First, run the development server:
+## Features
+
+- Search for Albion Online items.
+- Filter market results by item tier, city, and quality.
+- Display item information and market prices in reusable cards.
+- Browse results in a scrollable interface.
+
+## Tech stack
+
+- Next.js 15 (App Router)
+- React 19 and TypeScript
+- Tailwind CSS
+- Radix UI components
+- Axios
+
+## Getting started
+
+Requirements: Node.js and npm.
 
 ```bash
+git clone https://github.com/MilkeDeveloper/AlbionMKTfront.git
+cd AlbionMKTfront
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Market data depends on the services used by the application. The frontend alone may not provide live results without the corresponding API/backend configuration.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+- `src/app/market/page.tsx` — market page and result state
+- `src/components/Search` — item search UI
+- `src/components/Filters` — market filtering UI
+- `src/components/CardItem` — item/price presentation
 
-To learn more about Next.js, take a look at the following resources:
+## Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Personal project / portfolio code. Some loading and filtering behavior may still need refinement; this README documents the existing implementation rather than claiming a production deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MilkeDeveloper](https://github.com/MilkeDeveloper)
